@@ -1,0 +1,93 @@
+{% extends "base.jinja-html" %}
+{% block title %}
+Attributions
+{% endblock %}
+
+
+{% block content %}
+
+  <div class="container col-xxl-8 px-4 py-5">
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+          <div class="col-10 col-sm-8 col-lg-6">
+            <img
+              src="{{ url_for('static', filename='sysvador/static/images/favicon_io/android-chrome-512x512.png') }}"
+              class="d-block mx-lg-auto img-fluid"
+              alt="Image of boat made by AI"
+              width="300"
+              height="300"
+              loading="lazy"
+            />
+          </div>
+          <div class="col-lg-6">
+            <h1 class="display-5 fw-bold lh-1 mb-3">
+              Attributions
+            </h1>
+            <p class="lead">
+              This app would not have been possible without the work of others. This page is in English to make it easier to copy attibutions. 
+            </p>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+              <a href= {{  url_for('index') }} class="btn btn-primary btn-lg px-4 me-md-2">
+                Main page
+              </a>
+              <a
+                href="https://www.systek.no/" 
+                class="btn btn-outline-secondary btn-lg px-4"
+              >
+                Systek
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+ <div class="b-example-divider"></div>
+
+ <div class="container my-5">
+        <div
+          class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg"
+        >
+          <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
+            <h1 class="display-4 fw-bold lh-1">
+              favicon
+            </h1>
+            <p class="lead">
+             The logi is the avocado emoji. The first version of Dalle from open AI made a nice image with an avocado chair.
+             Dalle mini made the use of a crayon emoji as it's logo. For lack of inspiration we just just the avocado emoji. 
+             The emoji graphics are from the open source project Twemoji. The graphics
+             are copyright 2020 Twitter, Inc and other contributors. The graphics are
+             licensed under CC-BY 4.0.
+            </p>
+            <ul>
+                <li> Graphics Title: 1f951.svg </li>
+                <li> Graphics Author: Copyright 2020 Twitter, Inc and other contributors (https://github.com/twitter/twemoji) </li>
+                <li> Graphics Source: https://github.com/twitter/twemoji/blob/master/assets/svg/1f951.svg </li>
+                <li> Graphics License: CC-BY 4.0 (https://creativecommons.org/licenses/by/4.0/) </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="container my-5">
+        <div
+          class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg"
+        >
+          <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
+            <h1 class="display-4 fw-bold lh-1">
+              Dayma DALL·E Mini 2021
+            </h1>
+            <p class="lead">
+              The inspiration that made us belive we could do this. If we don't end up using their code or their model we 
+              are still grateful.
+               <ul>
+                <li> Authors: Dayma, Boris and Patil, Suraj and Cuenca, Pedro and Saifullah, Khalid and Abraham, Tanishq and Lê Khắc, Phúc and Melas, Luke and Ghosh, Ritobrata </li>
+                <li> Link: https://github.com/borisdayma/dalle-mini </li>
+                <li> License:  https://www.apache.org/licenses/LICENSE-2.0 </li>
+            </ul>
+
+                
+            </p>
+          </div>
+        </div>
+      </div>
+
+{% endblock %}

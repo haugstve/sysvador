@@ -1,0 +1,47 @@
+{% extends "base.jinja-html" %} {% block title %} Sysvador {% endblock %} {%
+block content %}
+
+ <div class="container col-xxl-8 px-4 py-5">
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+          <div class="col-10 col-sm-8 col-lg-6">
+            <img
+              src="{{ url_for('static', filename='images/dalle/salvador-dali-clock.jpg') }}"
+              class="d-block mx-lg-auto img-fluid"
+              alt="Bootstrap Themes"
+              width="700"
+              height="500"
+              loading="lazy"
+            />
+          </div>
+          <div class="col-lg-6">
+            <h1 class="display-5 fw-bold lh-1 mb-3">
+              Sysvador
+            </h1>
+            <form method="POST">
+              {{ form.hidden_tag() }}
+
+              {{ form.image_description.label }}
+              {{ form.image_description() }}
+
+              {{ form.submit() }}
+
+              {# <div class="form-floating mb-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="image_description"
+                    placeholder="En rev i romdrakt"
+                  />
+                  <label for="image_description">Beskriv et bilde</label>
+                </div>
+                <button class="w-100 btn btn-lg btn-primary" type="submit">
+                  Skap bilde
+                </button>
+              </div> #}
+            </form>
+          </div>
+        </div>
+      </div>
+
+
+{% endblock %}
